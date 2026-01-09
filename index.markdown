@@ -2,7 +2,6 @@
 layout: index
 ---
 
-# Assad Portfolio
 
 this is my portfolio
 
