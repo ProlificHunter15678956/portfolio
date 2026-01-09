@@ -22,28 +22,24 @@
         <a href="https://github.com/ProlificHunter15678956" class="btn">Mon Profile GitHub</a>
       {% endif %}
 
-
-
       {% if site.url %}
         <a href="../download/CV_Assad_Dzhabrailov.pdf" class="btn">Télécharger mon CV</a>
       {% endif %}
      
     </header>
-
+      <section id="pages">
+        <h2>Browse trough Pages</h2>
+        {%- for page in site.pages -%}  
+          {% if page.title %}
+          <ul>
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+          </ul>
+          {% endif %}
+        {%- endfor -%}
+        <h4><a href="/">Back Home</a></h4>
+      </section>
     <main id="content" class="main-content" role="main">
       {{ content }}
-      <!--
-      
-      
-      <section id="pages">
-        {%- for page in site.pages -%}
-          <a href="{{ page.url }}">{{ page.title | escape }}</a>&nbsp;&nbsp;
-        {%- endfor -%}
-      </section>
-      
-      
-      -->
-
       <footer class="site-footer">
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>

@@ -4,6 +4,8 @@ title: Contact
 permalink: /about/contact/
 ---
 
+<i>/home/contact</i>
+
 
 ## Github
 Contact me on github using @username
